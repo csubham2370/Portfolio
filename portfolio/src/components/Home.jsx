@@ -11,7 +11,7 @@ import { FaNodeJs } from "react-icons/fa";
 
 import { ReactTyped} from "react-typed";
 
-import pic from '../assets/photo.avif'
+import pic from '../assets/photo.jpg'
 
 
 const Home = () => {
@@ -91,7 +91,7 @@ const Home = () => {
       </div>
       <div  className='md:w-1/2 md:ml-48 md:mt-20 mt:8 order-1'>
       
-      <img src={pic} className='rounded-full md:w-[450px] md:h-[450px] ' />
+      <img src={pic} className='rounded-full md:w-[360px] md:h-[450px] md:mx-10  ' />
       
       
       </div>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross1 } from "react-icons/rx";
-import pic from '../assets/photo.avif'
+import pic from '../assets/photo.jpg'
 
 
 
@@ -16,7 +16,7 @@ const Navbar = () => {
     {id:4,text:"Contacts"}
   ]
   return (
-    <div className='max-w-screen-2xl container max-w-full px-4 md:px-20 shadow-md' >
+    <div className='max-w-screen-2xl container max-w-full px-4 md:px-20 shadow-md fixed h-16 top-0 left-0 right-0 z-50 bg-white ' >
 
       <div className='flex justify-between h-16 items-center'>
 
@@ -45,7 +45,7 @@ const Navbar = () => {
       {menu && (
       <div>
         <ul>
-        <ul className=' md:hidden flex flex-col items-center justify-center space-y-4 text-xl'>
+        <ul className=' md:hidden flex flex-col items-center justify-center space-y-4 text-xl bg-white'>
 
         {navItems.map((items,index) =>(<li className='hover:scale-105 duration-200 cursor-pointer font-semibold' key={index}>{items.text}</li>))}
           </ul>
