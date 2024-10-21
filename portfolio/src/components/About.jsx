@@ -78,7 +78,7 @@ const About = () =>{
 <Comp title={"Additional Qualification / Achievements / Certifications"}
 
 details={
-  Achievements.map(ach =>(<ul className="list-disc px-4"><li className="py-2  sm:text-justify ">{ach.title} <br /><a className=" text-blue-500" href={ach.link} target="_blank">Link</a></li></ul>))
+  Achievements.map((ach,index) =>(<ul className="list-disc px-4"><li key={index} className="py-2  sm:text-justify ">{ach.title} <br /><a className=" text-blue-500" href={ach.link} target="_blank">Link</a></li></ul>))
 }/>
 
 
