@@ -32,7 +32,7 @@ name:"Nodejs"
 },]
 
 return(<>
-<div className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-16">
+<div name='Exprience' className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-16">
 
 <h1 className="text-3xl font-bold mb-5">Exprience</h1>
 <span className=" font-semibold">I have more than 6 mounth experience in below technologies.</span>

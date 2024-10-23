@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross1 } from "react-icons/rx";
 import pic from '../assets/photo.jpg'
-
+import {Link} from 'react-scroll'
 
 
   
@@ -13,7 +13,7 @@ const Navbar = () => {
   const navItems = [{id:1,text: "Home"},
     {id:2,text:"About"},
     {id:3,text:"Portfolio"},
-    {id:4,text:"Contacts"}
+    {id:4,text:"Contact"}
   ]
   return (
     <div className='max-w-screen-2xl container max-w-full px-4 md:px-20 shadow-md fixed h-16 top-0 left-0 right-0 z-50 bg-white ' >
@@ -32,7 +32,12 @@ const Navbar = () => {
 
           <ul className='hidden md:flex space-x-8'>
             
-           {navItems.map((items,index) =>(<li className='hover:scale-105 duration-200 cursor-pointer' key={index}>{items.text}</li>))}
+           {navItems.map((items,index) =>(<li className='hover:scale-105 duration-200 cursor-pointer' key={index}>
+            <Link to={items.text}
+          smooth={true}
+          duration={500}
+          offset={-70}
+          activeClass='active'>{items.text}</Link></li>))}
           </ul>
           <div onClick={()=>setMenu(!menu)} className='md:hidden'>
         {menu ? <RxHamburgerMenu  size={24}/>:<RxCross1 size={24}/>}
@@ -47,7 +52,18 @@ const Navbar = () => {
         <ul>
         <ul className=' md:hidden flex flex-col items-center justify-center space-y-4 text-xl bg-white'>
 
-        {navItems.map((items,index) =>(<li className='hover:scale-105 duration-200 cursor-pointer font-semibold' key={index}>{items.text}</li>))}
+        {navItems.map((items,index) =>(<li className='hover:scale-105 duration-200 cursor-pointer font-semibold' key={index}>
+
+          <Link 
+          onClick={()=>setMenu(!menu)}
+          to={items.text}
+          smooth={true}
+          duration={500}
+          offset={-70}
+          activeClass='active'>
+          
+          {items.text}</Link>
+          </li>))}
           </ul>
         </ul>
       </div>

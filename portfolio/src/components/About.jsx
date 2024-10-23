@@ -22,7 +22,7 @@ const About = () =>{
   }]
 
   return(<>
-  <div className='max-w-screen-2xl container mx-auto px-4 md:px-20 my-20'>
+  <div name='About' className='max-w-screen-2xl container mx-auto px-4 md:px-20 my-20'>
     <h1 className="text-3xl font-bold">About</h1>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum ipsam eius enim consectetur numquam perferendis, facere fugiat a corrupti molestias!</p>
     <br />
