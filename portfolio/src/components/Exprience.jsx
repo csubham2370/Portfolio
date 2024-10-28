@@ -4,12 +4,14 @@ import mongodb from "../assets/mongodb.jpg"
 import express from "../assets/express.png"
 import reactjs from "../assets/reactjs.png"
 import nodejs from "../assets/node.png"
+import html from "../assets/html.png"
+import css from "../assets/css.png"
+import tailwind from "../assets/tailwind.png"
+import bootstrap from "../assets/bootstrap.png"
+import github from "../assets/github.png"
 const Exprience = () => {
     
-  const items = [{id:1,
-    logo:java,
-    name:"Java"
-},
+  const items = [
 {id:2,
 logo:python,
 name:"Python"
@@ -29,7 +31,27 @@ name:"Reactjs"
 {id:6,
 logo:nodejs,
 name:"Nodejs"
-},]
+},
+{id:7,
+  logo:html,
+  name:"HTML"
+  },
+  {id:8,
+    logo:css,
+    name:"CSS"
+    },
+    {id:9,
+      logo:tailwind,
+      name:"Tailwind"
+      },
+      {id:10,
+        logo:bootstrap,
+        name:"Bootstrap"
+        },
+        {id:11,
+          logo:github,
+          name:"GitHub"
+          }]
 
 return(<>
 <div name='Exprience' className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-16">

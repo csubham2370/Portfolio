@@ -24,7 +24,21 @@ const About = () =>{
   return(<>
   <div name='About' className='max-w-screen-2xl container mx-auto px-4 md:px-20 my-20'>
     <h1 className="text-3xl font-bold">About</h1>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum ipsam eius enim consectetur numquam perferendis, facere fugiat a corrupti molestias!</p>
+    <p className="text-justify">A passionate Full-Stack Developer with a
+              strong background in computer applications, having recently
+              completed my MCA from Asansol Engineering College. My technical
+              skill set includes proficiency in Python, Java, HTML, CSS, and
+              DBMS. I have successfully undertaken several projects, such as a
+              Crop Recommendation System using machine learning, a Job Finder
+              Portal, and a Hotel Management System, showcasing my abilities in
+              full-stack development. I have completed an internship in web
+              development and design with Oasis Infobyte and hold a
+              certification in Python fundamentals from Future Skills Prime
+              NASSCOM. My academic journey is complemented by my keen interest
+              in subjects like Operating Systems and the Internet of Things.
+              Outside of technology, I enjoy exploring cars and bikes, and I am
+              fluent in English, Bengali, and Hindi. You can find more about my
+              professional journey on my LinkedIn and GitHub profiles.</p>
     <br />
     <Comp 
   title={'Education'} 
